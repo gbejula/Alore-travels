@@ -1,12 +1,20 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import alore from '../images/alore-logo.png';
 
 const Header = () => {
   return (
     <div>
-      <Navbar fixed='top' collapseOnSelect expand='lg' bg='dark' variant='dark'>
+      <Navbar
+        fixed='top'
+        collapseOnSelect
+        expand='lg'
+        bg='light'
+        variant='light'>
         <Container>
-          <Navbar.Brand href='#home'>Alore Travels</Navbar.Brand>
+          <Navbar.Brand href='#home'>
+            <img src={alore} alt='logo' widht='60' height='60' />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse
             id='basic-navbar-nav'
