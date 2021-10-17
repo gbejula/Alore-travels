@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import alore from '../images/alore-logo.png';
+// import Link from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -12,7 +13,7 @@ const Header = () => {
         bg='light'
         variant='light'>
         <Container>
-          <Navbar.Brand href='#home'>
+          <Navbar.Brand href='/'>
             <img src={alore} alt='logo' widht='60' height='60' />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
@@ -20,8 +21,10 @@ const Header = () => {
             id='basic-navbar-nav'
             className='justify-content-end'>
             <Nav className='mr-auto'>
-              <Nav.Link href='/home'>Home</Nav.Link>
-              <Nav.Link href='/link'>About us</Nav.Link>
+              <Nav.Link href='/'>Home</Nav.Link>
+              <Nav.Link href='#services'>Services</Nav.Link>
+              <Nav.Link href='/contactus'>Contact us</Nav.Link>
+              <Nav.Link href='/aboutus'>About us</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
